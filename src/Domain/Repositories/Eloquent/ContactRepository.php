@@ -13,7 +13,7 @@ class ContactRepository extends BaseEloquentCrudRepository implements ContactRep
 
     public function tableName(): string
     {
-        return 'user_contact';
+        return 'person_contact';
     }
 
     public function getEntityClass(): string

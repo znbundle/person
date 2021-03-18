@@ -6,10 +6,10 @@ use Illuminate\Database\Schema\Blueprint;
 use ZnLib\Migration\Domain\Base\BaseCreateTableMigration;
 use ZnLib\Migration\Domain\Enums\ForeignActionEnum;
 
-class m_2018_02_25_102260_create_user_contact_table extends BaseCreateTableMigration
+class m_2018_02_25_102260_create_person_contact_table extends BaseCreateTableMigration
 {
 
-    protected $tableName = 'user_contact';
+    protected $tableName = 'person_contact';
     protected $tableComment = 'Контакты пользователя';
 
     public function tableSchema()
@@ -33,7 +33,7 @@ class m_2018_02_25_102260_create_user_contact_table extends BaseCreateTableMigra
             $table
                 ->foreign('type_id')
                 ->references('id')
-                ->on($this->encodeTableName('user_contact_type'))
+                ->on($this->encodeTableName('person_contact_type'))
                 ->onDelete(ForeignActionEnum::CASCADE)
                 ->onUpdate(ForeignActionEnum::CASCADE);
         };

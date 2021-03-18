@@ -5,10 +5,10 @@ namespace Migrations;
 use Illuminate\Database\Schema\Blueprint;
 use ZnLib\Migration\Domain\Base\BaseCreateTableMigration;
 
-class m_2018_02_25_102160_create_user_contact_type_table extends BaseCreateTableMigration
+class m_2018_02_25_102160_create_person_contact_type_table extends BaseCreateTableMigration
 {
 
-    protected $tableName = 'user_contact_type';
+    protected $tableName = 'person_contact_type';
     protected $tableComment = '';
 
     public function tableSchema()

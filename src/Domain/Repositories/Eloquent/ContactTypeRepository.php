@@ -11,7 +11,7 @@ class ContactTypeRepository extends BaseEloquentCrudRepository implements Contac
 
     public function tableName(): string
     {
-        return 'user_contact_type';
+        return 'person_contact_type';
     }
 
     public function getEntityClass(): string
