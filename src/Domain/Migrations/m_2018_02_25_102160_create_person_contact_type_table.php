@@ -9,16 +9,16 @@ class m_2018_02_25_102160_create_person_contact_type_table extends BaseCreateTab
 {
 
     protected $tableName = 'person_contact_type';
-    protected $tableComment = '';
+    protected $tableComment = 'Типы контактных данных';
 
     public function tableSchema()
     {
         return function (Blueprint $table) {
             $table->integer('id')->autoIncrement()->comment('Идентификатор');
-            $table->string('name')->comment('');
-            $table->string('title')->comment('');
-            $table->string('icon')->nullable()->comment('');
-            $table->string('rule')->comment('');
+            $table->string('name')->comment('Имя поля');
+            $table->string('title')->comment('Название');
+            $table->string('icon')->nullable()->comment('Иконка из набора FontAwesome 5');
+            $table->string('rule')->comment(' Регулярное выражение для валидации');
         };
     }
 }
