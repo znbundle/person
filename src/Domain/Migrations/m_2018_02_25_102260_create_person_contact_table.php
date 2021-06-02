@@ -24,7 +24,11 @@ class m_2018_02_25_102260_create_person_contact_table extends BaseCreateTableMig
             $table->dateTime('updated_at')->comment('Время обновления');
 
             $table->unique(['identity_id', 'type_id', 'value']);
-            $table
+
+            $this->addForeign($table, 'identity_id', 'user_identity');
+            $this->addForeign($table, 'type_id', 'person_contact_type');
+
+            /*$table
                 ->foreign('identity_id')
                 ->references('id')
                 ->on($this->encodeTableName('user_identity'))
@@ -35,7 +39,7 @@ class m_2018_02_25_102260_create_person_contact_table extends BaseCreateTableMig
                 ->references('id')
                 ->on($this->encodeTableName('person_contact_type'))
                 ->onDelete(ForeignActionEnum::CASCADE)
-                ->onUpdate(ForeignActionEnum::CASCADE);
+                ->onUpdate(ForeignActionEnum::CASCADE);*/
         };
     }
 }
