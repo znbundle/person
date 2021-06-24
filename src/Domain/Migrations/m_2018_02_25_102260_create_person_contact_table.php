@@ -21,7 +21,7 @@ class m_2018_02_25_102260_create_person_contact_table extends BaseCreateTableMig
             $table->boolean('is_main')->default(false)->comment('Основной');
             $table->string('value')->comment('Контакт');
             $table->dateTime('created_at')->comment('Время создания');
-            $table->dateTime('updated_at')->comment('Время обновления');
+            $table->dateTime('updated_at')->nullable()->comment('Время обновления');
 
             $table->unique(['identity_id', 'type_id', 'value']);
 

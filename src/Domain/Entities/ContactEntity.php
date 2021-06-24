@@ -110,7 +110,7 @@ class ContactEntity implements ValidateEntityByMetadataInterface, EntityIdInterf
         $this->updatedAt = $updatedAt;
     }
 
-    public function getType(): ContactTypeEntity
+    public function getType(): ? ContactTypeEntity
     {
         return $this->type;
     }
