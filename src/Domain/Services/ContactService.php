@@ -5,6 +5,7 @@ namespace ZnBundle\Person\Domain\Services;
 use ZnBundle\Person\Domain\Entities\ContactEntity;
 use ZnBundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
 use ZnBundle\Person\Domain\Interfaces\Services\ContactServiceInterface;
+use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
 use ZnCore\Domain\Base\BaseCrudService;
 use ZnCore\Domain\Entities\Query\Where;
 use ZnCore\Domain\Libs\Query;
@@ -12,8 +13,13 @@ use ZnCore\Domain\Libs\Query;
 class ContactService extends BaseCrudService implements ContactServiceInterface
 {
 
-    public function __construct(ContactRepositoryInterface $repository)
+    public function __construct
+    (
+        EntityManagerInterface $em,
+        ContactRepositoryInterface $repository
+    )
     {
+        $this->setEntityManager($em);
         $this->setRepository($repository);
     }
 
