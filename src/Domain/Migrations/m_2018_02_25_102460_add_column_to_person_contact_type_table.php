@@ -14,7 +14,7 @@ class m_2018_02_25_102460_add_column_to_person_contact_type_table extends BaseCo
     public function tableSchema()
     {
         return function (Blueprint $table) {
-            $table->jsonb('title_i18n')->nullable();
+            //$table->jsonb('title_i18n')->nullable();
         };
     }
 }
