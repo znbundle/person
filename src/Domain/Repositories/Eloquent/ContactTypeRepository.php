@@ -5,7 +5,7 @@ namespace ZnBundle\Person\Domain\Repositories\Eloquent;
 use ZnBundle\Person\Domain\Entities\ContactTypeEntity;
 use ZnBundle\Person\Domain\Interfaces\Repositories\ContactTypeRepositoryInterface;
 use ZnLib\Db\Base\BaseEloquentCrudRepository;
-use ZnLib\Db\Mappers\JsonMapper;
+use ZnDatabase\Base\Domain\Mappers\JsonMapper;
 
 class ContactTypeRepository extends BaseEloquentCrudRepository implements ContactTypeRepositoryInterface
 {
