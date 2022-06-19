@@ -5,6 +5,7 @@ namespace ZnBundle\Person\Domain\Entities;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
+use ZnCore\Base\Libs\I18Next\Traits\I18nTrait;
 use ZnCore\Base\Libs\I18Next\Traits\LanguageTrait;
 use ZnCore\Contract\Domain\Interfaces\Entities\EntityIdInterface;
 use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
@@ -12,7 +13,8 @@ use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 class ContactTypeEntity implements ValidateEntityByMetadataInterface, EntityIdInterface
 {
 
-    use LanguageTrait;
+//    use LanguageTrait;
+    use I18nTrait;
 
     private $id = null;
 
@@ -57,7 +59,27 @@ class ContactTypeEntity implements ValidateEntityByMetadataInterface, EntityIdIn
         return $this->name;
     }
 
-    public function setTitle(string $value): void
+    public function setTitle($value): void
+    {
+        $this->_setI18n('title', $value);
+    }
+
+    public function getTitle()
+    {
+        return $this->_getI18n('title');
+    }
+
+    public function getTitleI18n()
+    {
+        return $this->_getI18nArray('title');
+    }
+
+    public function setTitleI18n($titleI18n): void
+    {
+        $this->_setI18nArray('title', $titleI18n);
+    }
+
+    /*public function setTitle(string $value): void
     {
         $this->title = $value;
     }
@@ -75,7 +97,7 @@ class ContactTypeEntity implements ValidateEntityByMetadataInterface, EntityIdIn
     public function setTitleI18n($titleI18n): void
     {
         $this->titleI18n = $titleI18n;
-    }
+    }*/
 
     public function getIcon()
     {
