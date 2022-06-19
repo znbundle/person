@@ -6,7 +6,6 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
 use ZnCore\Base\Libs\I18Next\Traits\I18nTrait;
-use ZnCore\Base\Libs\I18Next\Traits\LanguageTrait;
 use ZnCore\Contract\Domain\Interfaces\Entities\EntityIdInterface;
 use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 
