@@ -7,8 +7,8 @@ use ZnBundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
 use ZnBundle\Person\Domain\Interfaces\Services\ContactServiceInterface;
 use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Domain\Base\BaseCrudService;
-use ZnCore\Domain\Entities\Query\Where;
-use ZnCore\Domain\Libs\Query;
+use ZnCore\Base\Libs\Query\Entities\Where;
+use ZnCore\Base\Libs\Query\Entities\Query;
 
 class ContactService extends BaseCrudService implements ContactServiceInterface
 {
