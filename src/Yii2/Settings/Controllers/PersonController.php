@@ -13,8 +13,8 @@ use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
 use ZnBundle\User\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnBundle\UserSettings\Yii2\Admin\Controllers\BaseSettingsController;
 use ZnCore\Base\Libs\I18Next\Facades\I18Next;
-use ZnCore\Domain\Exceptions\UnprocessibleEntityException;
-use ZnCore\Domain\Helpers\EntityHelper;
+use ZnCore\Base\Libs\Validation\Exceptions\UnprocessibleEntityException;
+use ZnCore\Base\Libs\Entity\Helpers\EntityHelper;
 use ZnLib\Web\Widgets\BreadcrumbWidget;
 use ZnYii\Base\Helpers\FormHelper;
 
