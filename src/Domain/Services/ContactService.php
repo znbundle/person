@@ -5,10 +5,10 @@ namespace ZnBundle\Person\Domain\Services;
 use ZnBundle\Person\Domain\Entities\ContactEntity;
 use ZnBundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
 use ZnBundle\Person\Domain\Interfaces\Services\ContactServiceInterface;
-use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Base\Libs\Service\Base\BaseCrudService;
-use ZnCore\Base\Libs\Query\Entities\Where;
-use ZnCore\Base\Libs\Query\Entities\Query;
+use ZnCore\Domain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnCore\Domain\Service\Base\BaseCrudService;
+use ZnCore\Domain\Query\Entities\Where;
+use ZnCore\Domain\Query\Entities\Query;
 
 class ContactService extends BaseCrudService implements ContactServiceInterface
 {
