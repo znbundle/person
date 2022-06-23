@@ -3,7 +3,7 @@
 namespace ZnBundle\Person\Domain\Interfaces\Services;
 
 use ZnBundle\Person\Domain\Entities\PersonEntity;
-use ZnCore\Base\Libs\Validation\Exceptions\UnprocessibleEntityException;
+use ZnCore\Base\Validation\Exceptions\UnprocessibleEntityException;
 
 interface PersonServiceInterface
 {
