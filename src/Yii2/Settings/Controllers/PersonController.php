@@ -15,7 +15,7 @@ use ZnBundle\UserSettings\Yii2\Admin\Controllers\BaseSettingsController;
 use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnCore\Base\Validation\Exceptions\UnprocessibleEntityException;
 use ZnCore\Domain\Entity\Helpers\EntityHelper;
-use ZnLib\Web\Components\Widget\Widgets\BreadcrumbWidget;
+use ZnLib\Web\Components\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 use ZnYii\Base\Helpers\FormHelper;
 
 class PersonController extends BaseSettingsController
