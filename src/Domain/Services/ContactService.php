@@ -29,7 +29,7 @@ class ContactService extends BaseCrudService implements ContactServiceInterface
         $query->whereNew(new Where('identity_id', $userId));
         $query->whereNew(new Where('type_id', $typeId));
         $query->whereNew(new Where('is_main', true));
-        $collection = $this->getRepository()->all($query);
+        $collection = $this->getRepository()->findAll($query);
         return $collection->first();
     }
 }
