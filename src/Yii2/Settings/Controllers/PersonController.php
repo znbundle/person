@@ -10,7 +10,7 @@ use Yii;
 use yii\base\Module;
 use yii\helpers\Url;
 use ZnBundle\Notify\Domain\Interfaces\Services\ToastrServiceInterface;
-use ZnBundle\User\Domain\Interfaces\Services\AuthServiceInterface;
+use ZnUser\Authentication\Domain\Interfaces\Services\AuthServiceInterface;
 use ZnBundle\UserSettings\Yii2\Admin\Controllers\BaseSettingsController;
 use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnCore\Base\Validation\Exceptions\UnprocessibleEntityException;
