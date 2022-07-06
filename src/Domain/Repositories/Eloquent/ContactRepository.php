@@ -5,7 +5,7 @@ namespace ZnBundle\Person\Domain\Repositories\Eloquent;
 use ZnBundle\Person\Domain\Entities\ContactEntity;
 use ZnBundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
 use ZnBundle\Person\Domain\Interfaces\Repositories\ContactTypeRepositoryInterface;
-use ZnCore\Domain\Relation\Libs\Types\OneToOneRelation;
+use ZnCore\Relation\Libs\Types\OneToOneRelation;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class ContactRepository extends BaseEloquentCrudRepository implements ContactRepositoryInterface

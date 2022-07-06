@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Person\Domain\Interfaces\Repositories;
 
-use ZnCore\Domain\Repository\Interfaces\CrudRepositoryInterface;
+use ZnCore\Repository\Interfaces\CrudRepositoryInterface;
 
 interface ContactTypeRepositoryInterface extends CrudRepositoryInterface
 {
