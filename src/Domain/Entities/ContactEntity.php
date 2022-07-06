@@ -5,8 +5,8 @@ namespace ZnBundle\Person\Domain\Entities;
 use DateTime;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Entity\Interfaces\EntityIdInterface;
+use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
 
 class ContactEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

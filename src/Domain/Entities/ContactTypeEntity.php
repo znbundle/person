@@ -6,8 +6,8 @@ use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnBundle\Language\Domain\Interfaces\Services\RuntimeLanguageServiceInterface;
 use ZnLib\Components\I18n\Traits\I18nTrait;
-use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Entity\Interfaces\EntityIdInterface;
+use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
 
 class ContactTypeEntity implements ValidationByMetadataInterface, EntityIdInterface
 {

@@ -4,7 +4,7 @@ namespace ZnBundle\Person\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
 
 class PersonEntity implements ValidationByMetadataInterface
 {
