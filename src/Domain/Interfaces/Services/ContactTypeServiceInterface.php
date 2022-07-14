@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Person\Domain\Interfaces\Services;
 
-use ZnCore\Service\Interfaces\CrudServiceInterface;
+use ZnDomain\Service\Interfaces\CrudServiceInterface;
 
 interface ContactTypeServiceInterface extends CrudServiceInterface
 {

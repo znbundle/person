@@ -5,8 +5,8 @@ namespace ZnBundle\Person\Domain\Services;
 use ZnBundle\Person\Domain\Entities\ContactEntity;
 use ZnBundle\Person\Domain\Interfaces\Repositories\ContactRepositoryInterface;
 use ZnBundle\Person\Domain\Interfaces\Services\ContactServiceInterface;
-use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Service\Base\BaseCrudService;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\Service\Base\BaseCrudService;
 use ZnCore\Query\Entities\Where;
 use ZnCore\Query\Entities\Query;
 
