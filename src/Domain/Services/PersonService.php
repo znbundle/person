@@ -4,7 +4,7 @@ namespace ZnBundle\Person\Domain\Services;
 
 use ZnBundle\Person\Domain\Entities\PersonEntity;
 use ZnBundle\Person\Domain\Interfaces\Services\PersonServiceInterface;
-use ZnCore\Validation\Helpers\ValidationHelper;
+use ZnDomain\Validator\Helpers\ValidationHelper;
 
 class PersonService implements PersonServiceInterface
 {
